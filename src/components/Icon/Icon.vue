@@ -50,4 +50,34 @@
       transform="translate(-431.312 -702.094)"
     />
   </svg>
+  <svg
+    v-else-if="type === 'right'"
+    xmlns="http://www.w3.org/2000/svg"
+    width="20.38"
+    height="44.812"
+    viewBox="0 0 20.38 44.812"
+    fill="#ff9e01"
+  >
+    <path
+      class="cls-1"
+      d="M1041.2,176.6L1020.8,199l20.4,22.4V176.6Z"
+      transform="translate(-1020.81 -176.594)"
+    />
+  </svg>
+  <svg
+    v-else-if="type === 'left'"
+    xmlns="http://www.w3.org/2000/svg"
+    width="20.38"
+    height="44.812"
+    viewBox="0 0 20.38 44.812"
+    fill="#ff9e01"
+  >
+    <path
+      id="Rectangle_5_copy"
+      data-name="Rectangle 5 copy"
+      class="cls-1"
+      d="M1427.8,176.6l20.4,22.4-20.4,22.4V176.6Z"
+      transform="translate(-1427.81 -176.594)"
+    />
+  </svg>
 </template>

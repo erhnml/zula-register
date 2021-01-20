@@ -4,7 +4,7 @@ import template from "./Button.vue";
 
 @Component({
   name: "custom-button",
-  mixins: [template] // use mixins to mix vue file functions
+  mixins: [template]
 })
 export default class Button extends Vue {
   @Prop() bgColor!: string;
@@ -13,6 +13,10 @@ export default class Button extends Vue {
   @Prop() onClick!: void;
 
   get getStyle() {
-    return `background-color: ${this.disabled ? "gray" : this.bgColor}`;
+    return `${
+      this.disabled
+        ? "background-color: gray"
+        : `background-image: url(${require(`../../assets/button-bg-${this.bgColor}.png`)});`
+    }`;
   }
 }

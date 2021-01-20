@@ -23,5 +23,8 @@
   display: inline-block;
   font-weight: bold;
   background-color: gray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 </style>
